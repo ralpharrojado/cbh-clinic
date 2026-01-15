@@ -76,7 +76,48 @@ export default function Home() {
                     Take a look at our modern, clean, and welcoming clinic space designed for your comfort and care.
                   </p>
                 </div>
-                <ClinicCarousel />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                  <ClinicCarousel />
+                  <div className="flex flex-col gap-4">
+                    <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.28901821348612!2d122.7558212688709!3d11.57876878606013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1768459928322!5m2!1sen!2sph"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                    <div className="bg-white p-6 rounded-xl border border-gray-200">
+                      <div className="grid grid-cols-1 gap-4">
+                        <div className="flex items-start gap-3">
+                          <span className="material-symbols-outlined text-[#7ED321]">location_on</span>
+                          <div>
+                            <p className="font-semibold text-[#111827] mb-1">Address</p>
+                            <p className="text-sm text-[#6B7280]">
+                              [Clinic Address Here]<br />
+                              [City, Province]<br />
+                              [Postal Code]
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="material-symbols-outlined text-[#7ED321]">schedule</span>
+                          <div>
+                            <p className="font-semibold text-[#111827] mb-1">Clinic Hours</p>
+                            <p className="text-sm text-[#6B7280]">
+                              Monday - Friday: 9:00 AM - 5:00 PM<br />
+                              Saturday: 9:00 AM - 1:00 PM<br />
+                              Sunday: Closed
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

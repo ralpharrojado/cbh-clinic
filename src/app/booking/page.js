@@ -113,6 +113,28 @@ export default function Booking() {
                   </div>
                   <div className="flex flex-col gap-6">
                     <div className="bg-white p-6 rounded-xl border border-gray-200">
+                      <h3 className="text-[#333333] text-lg font-bold mb-4">Our Location</h3>
+                      <div className="w-full h-[300px] rounded-lg overflow-hidden border border-gray-200 mb-4">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.28901821348612!2d122.7558212688709!3d11.57876878606013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1768459928322!5m2!1sen!2sph"
+                          width="100%"
+                          height="100%"
+                          style={{ border: 0 }}
+                          allowFullScreen=""
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="material-symbols-outlined text-[#65B0B5] shrink-0">location_on</span>
+                        <p className="text-sm text-gray-600">
+                          [Clinic Address Here]<br />
+                          [City, Province]<br />
+                          [Postal Code]
+                        </p>
+                      </div>
+                    </div>
+                    <div className="bg-white p-6 rounded-xl border border-gray-200">
                       <h3 className="text-[#333333] text-lg font-bold mb-4">Book Your Appointment</h3>
                       <p className="text-gray-600 text-sm mb-4">
                         Use the form on the left to get in touch with us, or call us directly to schedule your appointment.
